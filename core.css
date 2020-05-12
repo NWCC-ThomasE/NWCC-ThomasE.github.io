@@ -18,6 +18,12 @@ body {
   float: left;
 }
 
+.navbar li img {
+  height: 40px;
+  padding: 3px;
+  display: block;
+}
+
 .navbar li a {
   font-weight: bold;
   display: block;
