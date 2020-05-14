@@ -63,6 +63,7 @@ body {
 .content .biglinks {
   display: flex;
   padding: 0;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
