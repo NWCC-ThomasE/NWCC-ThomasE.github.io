@@ -67,6 +67,7 @@ body {
 }
 
 .content .biglinks a {
+  -webkit-flex: auto;
   flex: auto;
   padding: 2.5% 15%;
   text-align: center;
