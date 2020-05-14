@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #555;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -16,12 +16,6 @@ body {
 
 .navbar li {
   float: left;
-}
-
-.navbar li img {
-  height: 40px;
-  padding: 3px;
-  display: block;
 }
 
 .navbar li a {
@@ -34,15 +28,62 @@ body {
 }
 
 .navbar li a:hover {
+  background-color: #333;
+}
+
+.navbar li .active {
   background-color: #111;
 }
 
 .content {
+  display: block;
   margin: 0% 10%;
+}
+
+.content .left {
+  display: block;
+  float: left;
+  vertical-align: middle;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+.content .right {
+  display: block;
+  float: right;
+  vertical-align: middle;
+  padding-left: 2%;
+  padding-bottom: 2%;
 }
 
 .content div {
   padding: 2.5% 20%;
+}
+
+.content .biglinks {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.content .biglinks a {
+  flex: auto;
+  padding: 2.5% 15%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.content .biglinks a:nth-child(odd) {
+  background-color: #AAA;
+}
+
+.content .biglinks a:nth-child(even) {
+  background-color: #CCC;
+}
+
+.content .biglinks a:hover {
+  background-color: #555;
+  color: white;
 }
 
 .content div h1, h3 {
