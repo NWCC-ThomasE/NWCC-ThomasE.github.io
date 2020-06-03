@@ -1,116 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body {
   margin: 0;
-  font-family: sans-serif;
 }
 
-.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #555;
-  position: -webkit-sticky; /* Safari */
+.navigation {
   position: sticky;
   top: 0;
-}
-
-.navbar li {
-  float: left;
-}
-
-.navbar li a {
-  font-weight: bold;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar li a:hover {
-  background-color: #333;
-}
-
-.navbar li .active {
-  background-color: #111;
-}
-
-.content {
-  display: block;
-  margin: 0% 10%;
-}
-
-.content .left {
-  display: block;
-  float: left;
-  vertical-align: middle;
-  padding-right: 2%;
-  padding-bottom: 2%;
-}
-
-.content .right {
-  display: block;
-  float: right;
-  vertical-align: middle;
-  padding-left: 2%;
-  padding-bottom: 2%;
-}
-
-.content div {
-  padding: 2.5% 20%;
-}
-
-.content .biglinks {
-  display: flex;
-  padding: 0;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.content .biglinks a {
-  -webkit-flex: auto;
-  flex: auto;
-  padding: 2.5% 15%;
-  text-align: center;
-  font-size: 24px;
-  text-decoration: none;
-  color: black;
-}
-
-.content .biglinks a:nth-child(odd) {
-  background-color: #AAA;
-}
-
-.content .biglinks a:nth-child(even) {
+  left: 0;
   background-color: #CCC;
 }
 
-.content .biglinks a:hover {
-  background-color: #555;
-  color: white;
+.navigation ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.content div h1, h3 {
+.navigation li {
+  flex: auto;
+}
+
+.navigation a {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  padding: 20px 20px 20px 0px;
+  text-align: center;
+  position: relative;
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation a:hover {
+  color: dimgray;
+}
+
+
+.navigation a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: dimgray;
+
+  position: absolute;
+  top: 0;
+  width: 0;
+
+  transition: all ease-in-out 250ms;
+}
+
+.navigation a:hover::before {
+  width: 100%;
+}
+
+
+.content {
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding: 2.5% 10%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content:nth-child(odd) {
+  background-color: #DDD;
+}
+
+.content:nth-child(even) {
+  background-color: #EEE;
+}
+
+.content > h1 {
+  font-size: 36px;
+  font-weight: bolder;
   text-align: center;
 }
 
-.content div h1 {
-  font-weight: bolder;
-  font-size: 36px;
-}
-
-.content div h3 {
+.content > h3 {
+  font-size: 24px;
   font-weight: bold;
+  text-align: center;
 }
 
-.content div p {
-  text-align: justify;
-}
-
-.content div:nth-child(odd) {
-  background-color: #BBB;
-}
-
-.content div:nth-child(even) {
-  background-color: #DDD;
+.content > p {
+  font-size: 16px;
 }
