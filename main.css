@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300;400&display=swap');
+
+/* https://color.adobe.com/en/Waikiki-color-theme-10059740 */
+.palette-1 { color: #FBD45E; }
+.palette-2 { color: #F0A2C3; }
+.palette-3 { color: #EDCBDC; }
+.palette-4 { color: #E0EAEA; }
+.palette-5 { color: #E9FBF8; }
+
+header > a, header > h1, header > h2 {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 0;
+  color: white;
+  background-color: #E0EAEA;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(eg1-hamper.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header > h1 {
+  font-family: "Bellota", cursive;
+  font-size: 54px;
+  padding-top: 150px;
+  padding-bottom: 20px;
+}
+
+header > h2 {
+  font-size: 36px;
+  font-family: "Bellota", cursive;
+  padding: 20px 0;
+}
+
+header > a {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 150px;
+  transition: font-size 0.25s, color 0.25s, padding-bottom 0.25s;
+}
+
+header > a:hover {
+  font-size: 30px;
+  color: lightblue;
+  padding-bottom: 142px;
+}
+
+header > nav {
+  position: fixed;
+  top: 52;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background-color: #F0A2C3;
+}
+
+header > nav .logo {
+  font-family: Diplomata, sans-serif;
+  font-size: 24px;
+  color: #E9FBF8;
+}
+
+header > nav .harvest {
+  color: #E0EAEA;
+}
+
+header > nav a {
+  color: white;
+  flex: auto;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  padding: 10px;
+  align-items: top;
+  transition: background-color 0.25s;
+}
+
+header > nav a .fa {
+  padding-right: 5px;
+}
+
+header > nav a:hover:not(.logo) {
+  background-color: #EDCBDC;
+}
+
+.special {
+  width: 50%;
+  float: right;
+  padding: 50px 0;
+  padding-left: 50%;
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+div.first {
+  background-image: url(harvest-strawberries.jpg);
+}
+
+div.second {
+  background-image: url(harvest-grapes.jpg);
+}
+
+div.third {
+  background-image: url(harvest-apples.jpg);
+}
+
+.special > img {
+  display: none;
+}
+
+.specials > h3, .in-seasons > h3, aside > h3 {
+  font-family: "Bellota", cursive;
+  font-size: 48px;
+  text-align: center;
+}
+
+.in-seasons > ul {
+  list-style: circle;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 15px;
+}
+
+.special-text {
+  margin: 10px;
+}
+
+.special-text h4 {
+  font-family: "Bellota", cursive;
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+}
+
+.special-text p {
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.button {
+  text-align: center;
+  font-size: 24px;
+  background-color: #EDCBDC;
+  margin: auto;
+  padding: 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.button:hover {
+  background-color: #F0A2C3;
+  color: white;
+}
+
+.start {
+  display: block;
+}
+
+aside {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(harvest-raspberries.jpg);
+  background-position: 15% 65%;
+  background-size: 130%;
+  background-repeat: no-repeat;
+  padding: 20px;
+  color: white;
+}
+
+aside p {
+  font-size: 18px;
+}
+
+aside img {
+  display: none;
+}
+
+body {
+  font-family: sans-serif;
+  margin: auto;
+}
+
+footer {
+  margin-top: 150px;
+  border-radius: 50px 50px 0 0;
+  background-color: #F0A2C3;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-orders, .footer-about, .footer-social {
+  line-height: 30px;
+  flex: 33.3%;
+}
+
+.footer-section > h4 {
+  text-align: center;
+}
+
+.footer-logo, .site-links {
+  flex: 100%;
+  text-align: center;
+}
