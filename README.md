@@ -1,1 +1,0 @@
-# NWCC-ThomasE.github.io
