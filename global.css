@@ -4,6 +4,7 @@ body {
     background: url(bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;   
 }
@@ -52,12 +53,76 @@ div {
     border-radius: 50px;
 }
 
+div a {
+    color: white;
+    text-decoration: none;
+}
+
 h1 {
     font-size: 48px;
     text-align: center;
 }
 
+h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+p {
+    padding: 0.25em 10%;
+}
+
 hr {
-    border: 2px solid rgb(144, 255, 159);
+    padding: 2px;
+    border: 0px solid;
+    background: url(bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     border-radius: 5px;
+}
+
+.links-container {
+    margin:45px 10% 45px 10%;
+    background: url(bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.links-container a {
+    flex: auto;
+    margin: 5px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.35);
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.links-container a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.links-container a.topleft {
+    border-top-left-radius: 20px;
+}
+
+.links-container a.topright {
+    border-top-right-radius: 20px;
+}
+
+.links-container a.bottomleft {
+    border-bottom-left-radius: 20px;
+}
+
+.links-container a.bottomright {
+    border-bottom-right-radius: 20px;
 }
